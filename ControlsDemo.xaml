@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ControlsDemo.ControlsDemo"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="ControlsDemo"
+    BackgroundColor="White">
+    <ScrollView>
+        <VerticalStackLayout>
+            <BoxView BackgroundColor="Black" HeightRequest="200" />
+
+            <Label
+                FontAttributes="Bold"
+                FontSize="Large"
+                HorizontalTextAlignment="Center"
+                Text="cualquier wea"
+                TextColor="DarkRed" />
+            <Ellipse
+                Fill="BurlyWood"
+                HeightRequest="200"
+                HorizontalOptions="Center"
+                Stroke="Aquamarine"
+                StrokeThickness="10"
+                WidthRequest="200" />
+            <Line
+                Stroke="Black"
+                StrokeThickness="10"
+                X1="0"
+                X2="100"
+                Y1="0"
+                Y2="50" />
+            <Rectangle
+                Fill="DarkBlue"
+                HeightRequest="50"
+                HorizontalOptions="End"
+                RadiusX="10"
+                RadiusY="10"
+                Stroke="Black"
+                StrokeThickness="5"
+                WidthRequest="50" />
+            <Polygon
+                Fill="SaddleBrown"
+                Points="40,10 70 ,80 10 ,50"
+                Stroke="DarkGoldenrod"
+                StrokeThickness="5" />
+
+            <Polygon
+                Fill="PaleGreen"
+                Points="40,10 70 ,80 10 ,50"
+                Stroke="red"
+                StrokeDashArray="1,1"
+                StrokeDashOffset="6"
+                StrokeThickness="5" />
+
+            <Polyline
+                Fill="Bisque"
+                Points="0,0 10,30, 15,0 18,60"
+                Stroke="Purple"
+                StrokeThickness="3" />
+            <Path
+                Aspect="Uniform"
+                Data="M 10, 100 L 100,100 100,50z"
+                HorizontalOptions="Center"
+                Stroke="Black" />
+
+            <Border
+                Padding="16,8"
+                Background="BurlyWood"
+                HorizontalOptions="Center"
+                Stroke="Yellow"
+                StrokeThickness="4">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="40,0,0,40" />
+                </Border.StrokeShape>
+                <Label
+                    HorizontalOptions="Center"
+                    Text="HOLA CHUCHETUMARE"
+                    VerticalOptions="Center" />
+            </Border>
+
+
+
+            <Frame
+                Margin="5"
+                Padding="10"
+                BackgroundColor="Azure">
+                <Image Aspect="Fill" Source="dotnet_bot.png" />
+            </Frame>
+
+            <WebView HeightRequest="500" Source="https://platzi.com/" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

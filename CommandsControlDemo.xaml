@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ControlsDemo.CommandsControlDemo"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="CommandsControlDemo"
+    BackgroundColor="Azure">
+    <VerticalStackLayout>
+        <Button
+            x:Name="btnTest"
+            Clicked="btnTest_Clicked"
+            Text="CliclMEEE" />
+        <!-- <ImageButton Source="dotnet_bot.png" Clicked="btnTest_Clicked"/>-->
+        <RadioButton
+            CheckedChanged="RadioButton_CheckedChanged"
+            Content="Option 1"
+            GroupName="Grupo1" />
+        <RadioButton
+            CheckedChanged="RadioButton_CheckedChanged"
+            Content="Option 2"
+            GroupName="Grupo1" />
+        <RadioButton
+            CheckedChanged="RadioButton_CheckedChanged"
+            Content="Option 3"
+            GroupName="Grupo2" />
+        <RadioButton
+            CheckedChanged="RadioButton_CheckedChanged"
+            Content="Option 4"
+            GroupName="Grupo2" />
+        <SearchBar x:Name="searchControl" SearchButtonPressed="searchControl_SearchButtonPressed" />
+
+        <SwipeView>
+            <SwipeView.LeftItems>
+                <SwipeItems>
+                    <SwipeItem
+                        BackgroundColor="AliceBlue"
+                        IconImageSource="dotnet_bot.svg"
+                        Invoked="SwipeItem_Invoked"
+                        Text="Fav" />
+                    <SwipeItem
+                        BackgroundColor="RosyBrown"
+                        IconImageSource="dotnet_bot.svg"
+                        Invoked="SwipeItem_Invoked"
+                        Text="delete" />
+
+                </SwipeItems>
+            </SwipeView.LeftItems>
+            <Grid Background="CadetBlue" HeightRequest="60" WidthRequest="300">
+                <Label HorizontalOptions="Center" Text="desliza a la izq." VerticalOptions="Center"/>
+            </Grid>
+        </SwipeView>
+    </VerticalStackLayout>
+</ContentPage>
