@@ -6,7 +6,7 @@
         {
             InitializeComponent();
             //https://www.youtube.com/watch?v=A07moowM7h8
-            MainPage = new TextControlsDemo();
+            MainPage = new CollectionControlsDemo();
         }
     }
 }

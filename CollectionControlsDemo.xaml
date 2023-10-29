@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ControlsDemo.CollectionControlsDemo"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="CollectionControlsDemo">
+    <!-- <VerticalStackLayout>
+        <CarouselView IndicatorView="indicatorView">
+            <CarouselView.ItemsSource>-->
+    <!--  Generando un array en xml para el origen de datos  -->
+    <!--<x:Array Type="{x:Type x:String}">
+                    <x:String>mono</x:String>
+                    <x:String>perro</x:String>
+                    <x:String>gato</x:String>
+                    <x:String>hamster</x:String>
+                    <x:String>conejo</x:String>
+                    <x:String>loro</x:String>
+                    <x:String>pez</x:String>
+                    <x:String>tortuga</x:String>
+                    <x:String>chinchilla</x:String>
+
+                </x:Array>
+            </CarouselView.ItemsSource>-->
+    <!--  definiendo la vista de elementos del carrusel  -->
+    <!--<CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Frame
+                            Margin="20"
+                            BorderColor="Gray"
+                            CornerRadius="5"
+                            HasShadow="True"
+                            HeightRequest="100"
+                            HorizontalOptions="Center"
+                            VerticalOptions="CenterAndExpand">
+                            <Label Text="{Binding .}" />
+                        </Frame>
+                    </StackLayout>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>-->
+    <!--  para obtener el elemento actual  -->
+    <!--<IndicatorView
+            x:Name="indicatorView"
+            HorizontalOptions="Center"
+            IndicatorColor="DarkSlateGray"
+            SelectedIndicatorColor="DarkCyan" />
+    </VerticalStackLayout>-->
+    <!--  LISTADO  -->
+    <!--<ListView HasUnevenRows="True">
+        <ListView.ItemsSource>
+    -->
+    <!--  Generando un array en xml para el origen de datos  -->
+    <!--
+            <x:Array Type="{x:Type x:String}">
+                <x:String>mono</x:String>
+                <x:String>perro</x:String>
+                <x:String>gato</x:String>
+                <x:String>hamster</x:String>
+                <x:String>conejo</x:String>
+                <x:String>loro</x:String>
+                <x:String>pez</x:String>
+                <x:String>tortuga</x:String>
+                <x:String>chinchilla</x:String>
+
+            </x:Array>
+        </ListView.ItemsSource>
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout>
+                        <Frame Margin="20" BorderColor="DarkGrey" CornerRadius="5" HasShadow="True" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                        <Label Text="{Binding .}"/>
+                        </Frame>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>-->
+    <!--  Vista de colecciones  -->
+    <!--<CollectionView SelectionMode="Multiple">
+        <CollectionView.ItemsSource>
+            <x:Array Type="{x:Type x:String}">
+                <x:String>mono</x:String>
+                <x:String>perro</x:String>
+                <x:String>gato</x:String>
+                <x:String>hamster</x:String>
+                <x:String>conejo</x:String>
+                <x:String>loro</x:String>
+                <x:String>pez</x:String>
+                <x:String>tortuga</x:String>
+                <x:String>chinchilla</x:String>
+
+            </x:Array>
+        </CollectionView.ItemsSource>
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <StackLayout>
+                    <Frame Margin="20" BorderColor="DarkGrey" CornerRadius="5" HasShadow="True" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                        <Label Text="{Binding .}"/>
+                    </Frame>
+                </StackLayout>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>-->
+    <!--  CONTROL PICKER  -->
+    <!--<StackLayout>
+        <Picker VerticalOptions="Center">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>mono</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+
+        </Picker>
+    </StackLayout>-->
+    <!--  Table view  -->
+    <TableView Intent="Settings">
+        <TableRoot>
+            <TableSection Title="primera seccion">
+                <TextCell Detail="Celda de detalle" Text="Celda de texto" />
+                <EntryCell Label="Ingreso de texto" Text="Ingreso de Texto" />
+                <SwitchCell Text="Celda de switch" />
+                <ImageCell
+                    Detail="Celda de imagen"
+                    ImageSource="XamarinLogo.png"
+                    Text="Celda de imagen" />
+            </TableSection>
+            <TableSection Title="Segunda Seccion">
+                <TextCell Detail="Celda de detalle" Text="Celda de texto" />
+                <EntryCell Label="Ingreso de texto" Text="Ingreso de Texto" />
+                <SwitchCell Text="Celda de switch" />
+                <ImageCell
+                    Detail="Celda de imagen"
+                    ImageSource="dotnet_bot.svg"
+                    Text="Celda de imagen" />
+            </TableSection>
+        </TableRoot>
+
+    </TableView>
+</ContentPage>

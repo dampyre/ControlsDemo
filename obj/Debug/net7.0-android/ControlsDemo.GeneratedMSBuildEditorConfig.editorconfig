@@ -14,6 +14,12 @@ build_property.IncludeAllContentForSelfExtract =
 build_property.RootNamespace = ControlsDemo
 build_property.ProjectDir = C:\Users\throg\source\repos\ControlsDemo\
 
+[C:/Users/throg/source/repos/ControlsDemo/ActivityControlsDemo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ControlsDemo.ActivityControlsDemo.xaml
+build_metadata.AdditionalFiles.TargetPath = ActivityControlsDemo.xaml
+build_metadata.AdditionalFiles.RelativePath = ActivityControlsDemo.xaml
+
 [C:/Users/throg/source/repos/ControlsDemo/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ControlsDemo.App.xaml
@@ -25,6 +31,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ControlsDemo.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/throg/source/repos/ControlsDemo/CollectionControlsDemo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ControlsDemo.CollectionControlsDemo.xaml
+build_metadata.AdditionalFiles.TargetPath = CollectionControlsDemo.xaml
+build_metadata.AdditionalFiles.RelativePath = CollectionControlsDemo.xaml
 
 [C:/Users/throg/source/repos/ControlsDemo/CommandsControlDemo.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
